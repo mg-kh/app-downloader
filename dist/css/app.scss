@@ -83,14 +83,43 @@ App Card Section
 /*========================================================
 Owl Dots
 ==========================================================*/
-.owl-dot {
-     @extend %button-neo-low;
-     margin: 0px 5px;
+.app-section {
+     .owl-dot {
+          @extend %button-neo-low;
+          margin: 0px 5px;
+     }
+
+     .owl-dot .active {
+          background: red;
+     }
 }
 
-.owl-dot .active {
-     background: red;
+/*========================================================
+Phone Section
+==========================================================*/
+.phone-container {
+     margin: 0 auto;
+     max-width: 250px;
+     padding: 0;
+     position: relative;
+
+     .phone-back {
+          background: #000;
+          width: 98%;
+          height: 94%;
+          top: 0%;
+          position: absolute;
+          margin-top: 7px;
+          border-radius: 13px;
+
+          .phone-content-wrapper {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+          }
+     }
 }
+
 
 @media screen and (max-width : '576px') {
      .hero-background {

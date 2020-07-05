@@ -17,7 +17,7 @@ body {
           box-shadow: 3px 3px 5px #43a4c5, -5px -5px 10px #63f2ff;
 }
 
-.neo-btn:hover, .abality-card .abality-icon, .abality-card:hover, .owl-dot {
+.neo-btn:hover, .abality-card .abality-icon, .abality-card:hover, .app-section .owl-dot {
   border-radius: 30px;
   background: linear-gradient(145deg, #4bb7db, #59d9ff);
   -webkit-box-shadow: 3px 3px 5px #43a4c5, -5px -5px 10px #63f2ff;
@@ -99,12 +99,44 @@ App Card Section
 /*========================================================
 Owl Dots
 ==========================================================*/
-.owl-dot {
+.app-section .owl-dot {
   margin: 0px 5px;
 }
 
-.owl-dot .active {
+.app-section .owl-dot .active {
   background: red;
+}
+
+/*========================================================
+Phone Section
+==========================================================*/
+.phone-container {
+  margin: 0 auto;
+  max-width: 250px;
+  padding: 0;
+  position: relative;
+}
+
+.phone-container .phone-back {
+  background: #000;
+  width: 98%;
+  height: 94%;
+  top: 0%;
+  position: absolute;
+  margin-top: 7px;
+  border-radius: 13px;
+}
+
+.phone-container .phone-back .phone-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 576px) {
