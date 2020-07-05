@@ -13,19 +13,23 @@ body {
 .neo-btn, .abality-card, .app-card {
   border-radius: 30px;
   background: linear-gradient(145deg, #59d9ff, #4bb7db);
-  -webkit-box-shadow: 5px 5px 10px #43a4c5, -5px -5px 10px #63f2ff;
-          box-shadow: 5px 5px 10px #43a4c5, -5px -5px 10px #63f2ff;
+  -webkit-box-shadow: 3px 3px 5px #43a4c5, -5px -5px 10px #63f2ff;
+          box-shadow: 3px 3px 5px #43a4c5, -5px -5px 10px #63f2ff;
 }
 
 .neo-btn:hover, .abality-card .abality-icon, .abality-card:hover, .owl-dot {
   border-radius: 30px;
   background: linear-gradient(145deg, #4bb7db, #59d9ff);
-  -webkit-box-shadow: 5px 5px 10px #43a4c5, -5px -5px 10px #63f2ff;
-          box-shadow: 5px 5px 10px #43a4c5, -5px -5px 10px #63f2ff;
+  -webkit-box-shadow: 3px 3px 5px #43a4c5, -5px -5px 10px #63f2ff;
+          box-shadow: 3px 3px 5px #43a4c5, -5px -5px 10px #63f2ff;
 }
 
 .container {
   margin-bottom: 100px !important;
+}
+
+.neo-btn {
+  color: white;
 }
 
 .neo-btn:hover {
@@ -40,7 +44,6 @@ body {
 Hero Section
 ==========================================================*/
 .hero-background {
-  background-size: cover;
   height: 100vh;
 }
 
@@ -104,6 +107,9 @@ Owl Dots
 }
 
 @media screen and (max-width: 576px) {
+  .hero-background {
+    height: 80vh;
+  }
   .abality-wrap {
     width: 180px !important;
     margin-bottom: 20px;
