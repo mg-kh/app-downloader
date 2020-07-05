@@ -18,7 +18,7 @@
 Hero Section
 ==========================================================*/
 .hero-background {
-     height: 100vh;
+     // height: 100vh;
 }
 
 
@@ -64,6 +64,11 @@ $min-height : 50px;
      }
 }
 
+.abality-wrap {
+     min-width: 180px !important;
+     margin-bottom: 20px;
+}
+
 
 
 
@@ -89,7 +94,7 @@ Owl Dots
 
 @media screen and (max-width : '576px') {
      .hero-background {
-          height: 80vh;
+          height: 100%;
      }
 
      .abality-wrap {

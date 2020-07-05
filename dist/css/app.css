@@ -43,10 +43,6 @@ body {
 /*========================================================
 Hero Section
 ==========================================================*/
-.hero-background {
-  height: 100vh;
-}
-
 /*========================================================
 Abality Card Section
 ==========================================================*/
@@ -88,6 +84,11 @@ Abality Card Section
   color: #FFEB3B;
 }
 
+.abality-wrap {
+  min-width: 180px !important;
+  margin-bottom: 20px;
+}
+
 /*========================================================
 App Card Section
 ==========================================================*/
@@ -108,7 +109,7 @@ Owl Dots
 
 @media screen and (max-width: 576px) {
   .hero-background {
-    height: 80vh;
+    height: 100%;
   }
   .abality-wrap {
     width: 180px !important;
