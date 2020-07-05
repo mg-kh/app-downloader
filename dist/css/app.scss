@@ -1,0 +1,96 @@
+@import './variables';
+
+.neo-btn {
+     @extend %button-neo-pop;
+}
+
+.neo-btn:hover {
+     @extend %button-neo-low;
+     color: white;
+}
+
+.section-title {
+     color: white;
+}
+
+/*========================================================
+Hero Section
+==========================================================*/
+.hero-background {
+     // background-image: url('https://i.picsum.photos/id/1045/3936/2624.jpg?hmac=PMfAbC94Asle_jgeRYsj7zQHFabfTfsIwL247Ewetwc');
+     background-size: cover;
+     height: 100vh;
+}
+
+
+/*========================================================
+Abality Card Section
+==========================================================*/
+$min-height : 50px;
+
+.abality-card {
+     @extend %button-neo-pop;
+     border: none !important;
+     cursor: pointer;
+     min-height: $min-height;
+     max-width: 200px;
+     margin: auto;
+
+     .abality-icon {
+          @extend %button-neo-low;
+          position: absolute;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          top: -30px;
+          left: 50%;
+          transform: translate(-50%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 35px;
+     }
+
+     p {
+          line-height: $min-height;
+          margin-top: 30px;
+     }
+
+     &:hover {
+          @extend %button-neo-low;
+     }
+
+     & i {
+          color: #FFEB3B;
+     }
+}
+
+
+
+
+/*========================================================
+App Card Section
+==========================================================*/
+.app-card {
+     @extend %button-neo-pop;
+     border: none !important;
+}
+
+/*========================================================
+Owl Dots
+==========================================================*/
+.owl-dot {
+     @extend %button-neo-low;
+     margin: 0px 5px;
+}
+
+.owl-dot .active {
+     background: red;
+}
+
+@media screen and (max-width : '576px') {
+     .abality-wrap {
+          width: 180px !important;
+          margin-bottom: 20px;
+     }
+}

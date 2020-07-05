@@ -1,0 +1,112 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #53cbf3 !important;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.neo-btn, .abality-card, .app-card {
+  border-radius: 30px;
+  background: linear-gradient(145deg, #59d9ff, #4bb7db);
+  -webkit-box-shadow: 5px 5px 10px #43a4c5, -5px -5px 10px #63f2ff;
+          box-shadow: 5px 5px 10px #43a4c5, -5px -5px 10px #63f2ff;
+}
+
+.neo-btn:hover, .abality-card .abality-icon, .abality-card:hover, .owl-dot {
+  border-radius: 30px;
+  background: linear-gradient(145deg, #4bb7db, #59d9ff);
+  -webkit-box-shadow: 5px 5px 10px #43a4c5, -5px -5px 10px #63f2ff;
+          box-shadow: 5px 5px 10px #43a4c5, -5px -5px 10px #63f2ff;
+}
+
+.container {
+  margin-bottom: 100px !important;
+}
+
+.neo-btn:hover {
+  color: white;
+}
+
+.section-title {
+  color: white;
+}
+
+/*========================================================
+Hero Section
+==========================================================*/
+.hero-background {
+  background-size: cover;
+  height: 100vh;
+}
+
+/*========================================================
+Abality Card Section
+==========================================================*/
+.abality-card {
+  border: none !important;
+  cursor: pointer;
+  min-height: 50px;
+  max-width: 200px;
+  margin: auto;
+}
+
+.abality-card .abality-icon {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 35px;
+}
+
+.abality-card p {
+  line-height: 50px;
+  margin-top: 30px;
+}
+
+.abality-card i {
+  color: #FFEB3B;
+}
+
+/*========================================================
+App Card Section
+==========================================================*/
+.app-card {
+  border: none !important;
+}
+
+/*========================================================
+Owl Dots
+==========================================================*/
+.owl-dot {
+  margin: 0px 5px;
+}
+
+.owl-dot .active {
+  background: red;
+}
+
+@media screen and (max-width: 576px) {
+  .abality-wrap {
+    width: 180px !important;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=app.css.map */
