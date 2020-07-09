@@ -1,118 +1,43 @@
 @import './variables';
 
-.neo-btn {
-     @extend %button-neo-pop;
-     color: white;
-}
+//------------------------------------>[Hero Section]
+.hero-section {
+     height: 100vh;
+     z-index: 1;
 
-.neo-btn:hover {
-     @extend %button-neo-low;
-     color: white;
-}
-
-.section-title {
-     color: white;
-}
-
-/*========================================================
-Hero Section
-==========================================================*/
-.hero-background {
-     // height: 100vh;
-}
-
-
-/*========================================================
-Abality Card Section
-==========================================================*/
-$min-height : 50px;
-
-.abality-card {
-     @extend %button-neo-pop;
-     border: none !important;
-     cursor: pointer;
-     min-height: $min-height;
-     max-width: 200px;
-     margin: auto;
-
-     .abality-icon {
-          @extend %button-neo-low;
-          position: absolute;
-          width: 70px;
-          height: 70px;
-          border-radius: 50%;
-          top: -30px;
-          left: 50%;
-          transform: translate(-50%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 35px;
+     .hero-section-wrapper {
+          background-image: url('https://i.picsum.photos/id/379/2000/1328.jpg?hmac=GQgUyMlZFrslGR2FRYSKxU8YhdH8sTfcwZdUqvqco5c');
+          background-size: cover;
+          filter: blur(8px);
+          -webkit-filter: blur(8px);
+          height: 100%;
+          width: 100%;
+          animation: noblur 2s 0s forwards;
+          background-position: center;
      }
 
-     p {
-          line-height: $min-height;
-          margin-top: 30px;
-     }
+     @keyframes noblur {
+          from {
+               filter: blur(8px);
+               -webkit-filter: blur(8px);
+          }
 
-     &:hover {
-          @extend %button-neo-low;
-     }
-
-     & i {
-          color: #FFEB3B;
+          to {
+               filter: blur(0px);
+               -webkit-filter: blur(0px);
+          }
      }
 }
 
-.abality-wrap {
-     min-width: 180px !important;
-     margin-bottom: 20px;
-}
-
-
-
-
-/*========================================================
-App Card Section
-==========================================================*/
-.app-card {
-     @extend %button-neo-pop;
-     border: none !important;
-}
-
-/*========================================================
-Owl Dots
-==========================================================*/
-.app-section {
-     .owl-dot {
-          @extend %button-neo-low;
-          margin: 0px 5px;
-     }
-
-     .owl-dot .active {
-          background: red;
-     }
-}
-
-/*========================================================
-Phone Section
-==========================================================*/
-.phone-container {
-     margin: 0 auto;
-     max-width: 250px;
-     padding: 0;
+//------------------------------------>[Pass Through Section]
+.pass-through {
+     z-index: 2;
      position: relative;
 
-     .phone-back {
-          background: #000;
-          width: 98%;
-          height: 94%;
-          top: 0%;
-          position: absolute;
-          margin-top: 7px;
-          border-radius: 13px;
-
-          .phone-content-wrapper {
+     .app-section {
+          .steps {
+               width: 60px;
+               color: white;
                display: flex;
                align-items: center;
                justify-content: center;
@@ -121,13 +46,10 @@ Phone Section
 }
 
 
-@media screen and (max-width : '576px') {
-     .hero-background {
-          height: 100%;
-     }
 
-     .abality-wrap {
-          width: 180px !important;
-          margin-bottom: 20px;
-     }
+//------------------------------------>[Footer Section]
+.footer-section {
+     background: rgba(0, 0, 0, 0.8);
+     position: relative;
+     z-index: 2;
 }

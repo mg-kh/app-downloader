@@ -1,133 +1,50 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.hero-section {
+  height: 100vh;
+  z-index: 1;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  background: #53cbf3 !important;
-  font-family: 'Ubuntu', sans-serif;
+.hero-section .hero-section-wrapper {
+  background-image: url("https://i.picsum.photos/id/379/2000/1328.jpg?hmac=GQgUyMlZFrslGR2FRYSKxU8YhdH8sTfcwZdUqvqco5c");
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  width: 100%;
+  -webkit-animation: noblur 2s 0s forwards;
+          animation: noblur 2s 0s forwards;
+  background-position: center;
 }
 
-.neo-btn, .abality-card, .app-card {
-  border-radius: 30px;
-  background: linear-gradient(145deg, #59d9ff, #4bb7db);
-  -webkit-box-shadow: 3px 3px 5px #43a4c5, -5px -5px 10px #63f2ff;
-          box-shadow: 3px 3px 5px #43a4c5, -5px -5px 10px #63f2ff;
+@-webkit-keyframes noblur {
+  from {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+  to {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
 }
 
-.neo-btn:hover, .abality-card .abality-icon, .abality-card:hover, .app-section .owl-dot {
-  border-radius: 30px;
-  background: linear-gradient(145deg, #4bb7db, #59d9ff);
-  -webkit-box-shadow: 3px 3px 5px #43a4c5, -5px -5px 10px #63f2ff;
-          box-shadow: 3px 3px 5px #43a4c5, -5px -5px 10px #63f2ff;
+@keyframes noblur {
+  from {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+  to {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
 }
 
-.container {
-  margin-bottom: 100px !important;
-}
-
-.neo-btn {
-  color: white;
-}
-
-.neo-btn:hover {
-  color: white;
-}
-
-.section-title {
-  color: white;
-}
-
-/*========================================================
-Hero Section
-==========================================================*/
-/*========================================================
-Abality Card Section
-==========================================================*/
-.abality-card {
-  border: none !important;
-  cursor: pointer;
-  min-height: 50px;
-  max-width: 200px;
-  margin: auto;
-}
-
-.abality-card .abality-icon {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  top: -30px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 35px;
-}
-
-.abality-card p {
-  line-height: 50px;
-  margin-top: 30px;
-}
-
-.abality-card i {
-  color: #FFEB3B;
-}
-
-.abality-wrap {
-  min-width: 180px !important;
-  margin-bottom: 20px;
-}
-
-/*========================================================
-App Card Section
-==========================================================*/
-.app-card {
-  border: none !important;
-}
-
-/*========================================================
-Owl Dots
-==========================================================*/
-.app-section .owl-dot {
-  margin: 0px 5px;
-}
-
-.app-section .owl-dot .active {
-  background: red;
-}
-
-/*========================================================
-Phone Section
-==========================================================*/
-.phone-container {
-  margin: 0 auto;
-  max-width: 250px;
-  padding: 0;
+.pass-through {
+  z-index: 2;
   position: relative;
 }
 
-.phone-container .phone-back {
-  background: #000;
-  width: 98%;
-  height: 94%;
-  top: 0%;
-  position: absolute;
-  margin-top: 7px;
-  border-radius: 13px;
-}
-
-.phone-container .phone-back .phone-content-wrapper {
+.pass-through .app-section .steps {
+  width: 60px;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,13 +56,9 @@ Phone Section
           justify-content: center;
 }
 
-@media screen and (max-width: 576px) {
-  .hero-background {
-    height: 100%;
-  }
-  .abality-wrap {
-    width: 180px !important;
-    margin-bottom: 20px;
-  }
+.footer-section {
+  background: rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 2;
 }
 /*# sourceMappingURL=app.css.map */
