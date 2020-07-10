@@ -25,7 +25,7 @@ body {
   width: 100%;
   -webkit-animation: noblur 2s 0s forwards;
           animation: noblur 2s 0s forwards;
-  background-position: center;
+  background-position: right;
 }
 
 @-webkit-keyframes noblur {
