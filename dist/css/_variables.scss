@@ -5,3 +5,28 @@ body {
      font-family: 'Dosis', sans-serif;
      font-family: 'Source Sans Pro', sans-serif;
 }
+
+.bg-success {
+     background: #459a0b !important;
+}
+
+.text-success {
+     color: #459a0b !important;
+}
+
+.btn-outline-success {
+     color: #459a0b !important;
+     border-color: #459a0b !important;
+}
+
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+     color: #fff !important;
+     background-color: #459a0b !important;
+     border-radius: 0px;
+}
+
+.owl-dots .active span {
+     background: #459a0b !important;
+}
