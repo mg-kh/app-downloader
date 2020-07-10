@@ -5,8 +5,12 @@
      height: 100vh;
      z-index: 1;
 
+     h1 {
+          font-size: 72px;
+     }
+
      .hero-section-wrapper {
-          background-image: url('https://i.picsum.photos/id/379/2000/1328.jpg?hmac=GQgUyMlZFrslGR2FRYSKxU8YhdH8sTfcwZdUqvqco5c');
+          background-image: url('../img/heroImage.png');
           background-size: cover;
           filter: blur(8px);
           -webkit-filter: blur(8px);
